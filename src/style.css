@@ -1,0 +1,67 @@
+form {
+    margin-bottom: 1%;
+  }
+  body {
+    margin: 30px;
+  }
+  
+  h1 {
+    color: #184d47;
+  }
+  
+  h2 {
+    color: #184d47;
+  }
+  
+  p {
+    margin-top: -10%;
+    margin-bottom: 0%;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: .375rem .75rem;
+    border-radius: 5px;
+    border: 1px solid #184d47;
+    background-color: #fff;
+  }
+  
+  i {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    top: 5px;
+    color: #184d47;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  .weather-app {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #d6efc7;
+    border-radius: 15px;
+    border: 1px solid seagreen;
+  }
+  
+  .search-form {
+    margin-bottom: 12px;
+  }
+  
+  .form-control {
+    border: 1px solid #184d47;
+  }
+  
+  .row {
+    text-align: center;
+  }
+  
+  a {
+    color: #184d47;
+    text-decoration: none;
+  }
+  
