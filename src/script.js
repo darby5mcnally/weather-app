@@ -61,7 +61,7 @@ function showTemperature(response) {
   changingCity.innerHTML = response.data.name;
   let temperature = Math.round(response.data.main.temp);
   let temperatureMetric = document.querySelector("#temperature-metric");
-  temperatureMetric.innerHTML = `${temperature}°`;
+  temperatureMetric.innerHTML = `${temperature}`;
 }
 let form = document.querySelector("#city-form");
 form.addEventListener("submit", cityForm);

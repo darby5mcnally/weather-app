@@ -57,6 +57,13 @@ form {
     border: 1px solid #184d47;
   }
   
+  h1 .units {
+    position: relative;
+    font-size: 18px;
+    top: -14px;
+    left: -10px;
+  }
+
   .row {
     text-align: center;
   }
