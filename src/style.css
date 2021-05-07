@@ -23,8 +23,6 @@ form {
     font-size: 16px;
     padding: .375rem .75rem;
     border-radius: 5px;
-    border: 1px solid #184d47;
-    background-color: #fff;
   }
   
   i {
@@ -51,8 +49,11 @@ form {
   
   .search-form {
     margin-bottom: 12px;
+    border: 1px solid #184d47;
+    background-color: #fff;
+    color: #184d47;
   }
-  
+
   .form-control {
     border: 1px solid #184d47;
   }
