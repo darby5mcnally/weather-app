@@ -1,10 +1,20 @@
+function formatDate(timestamp) {
+
+}
+
 //Date, time, year
 let now = new Date();
 
 let p = document.querySelector("p");
 let date = now.getDate();
 let hour = now.getHours();
+if (hour < 10) {
+  hour = `0${hour}`;
+}
 let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 let year = now.getFullYear();
 
 let days = [
