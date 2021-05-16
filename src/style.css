@@ -8,15 +8,30 @@ form {
   
   h1 {
     color: #184d47;
+    margin-bottom: 0;
   }
   
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #184d47;
+    margin: 0;
+    padding: 0;
+  }
+
   h2 {
     color: #184d47;
   }
   
   p {
     margin-top: -10%;
-    margin-bottom: 0%;
+    margin-bottom: 0;
   }
   
   button {
@@ -45,7 +60,7 @@ form {
     margin: 20px auto;
     padding: 30px;
     background-color: #d6efc7;
-    border-radius: 15px;
+    border-radius: 5px;
     border: 1px solid seagreen;
   }
   
@@ -55,17 +70,6 @@ form {
   
   .form-control {
     border: 1px solid #184d47;
-  }
-  
-  h1 .units {
-    position: relative;
-    font-size: 18px;
-    top: -14px;
-    left: -10px;
-  }
-
-  .row {
-    text-align: center;
   }
   
   a {
