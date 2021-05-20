@@ -9,6 +9,7 @@ form {
   h1 {
     color: #184d47;
     margin-bottom: 0;
+    font-size: 32px;
   }
   
   ul {
@@ -27,8 +28,17 @@ form {
 
   h2 {
     color: #184d47;
+    font-size: 70px;
+    margin-left: 35px;
   }
-  
+
+  h2 i {
+    font-size: 55px;
+    font-weight: 100;
+    margin-right: -10px;
+    margin-top: 50px;
+  }
+
   p {
     margin-top: -10%;
     margin-bottom: 0;
@@ -40,6 +50,7 @@ form {
     border-radius: 5px;
     border: 1px solid #184d47;
     background-color: #fff;
+    width: 100%;
   }
   
   i {
@@ -71,7 +82,23 @@ form {
   .form-control {
     border: 1px solid #184d47;
   }
-  
+
+  .units {
+    font-size: 18px; 
+    position: relative;
+    top: -37px;
+    left: -13px;
+  }
+
+  .conditions {
+    font-size: 10px;
+  }
+
+  .weekly-report {
+    text-align: center;
+    margin-top: 15px;
+  }
+
   a {
     color: #184d47;
     text-decoration: none;
