@@ -90,6 +90,7 @@ form {
 
   .current-weather-conditions {
     border-bottom: 1px solid #ffff;
+    padding-bottom: 8px;
   }
 
   .units {
