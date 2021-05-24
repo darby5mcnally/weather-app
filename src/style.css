@@ -45,10 +45,10 @@ form {
   }
 
   p {
-    margin-top: -10%;
-    margin-bottom: 0;
+  margin-top: -10%;
+  margin-bottom: 0;
   }
-  
+
   button {
     font-size: 16px;
     padding: .375rem .75rem;
@@ -71,6 +71,10 @@ form {
     text-align: center;
   }
   
+  li::first-letter {
+    text-transform: capitalize;
+  }
+
   .weather-app {
     max-width: 600px;
     margin: 20px auto;
