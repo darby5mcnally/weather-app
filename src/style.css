@@ -27,26 +27,30 @@ form {
   }
 
   h1 {
-    font-weight: 500;
+    color: #184d47;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: -18px;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  h1 img {
+    font-size: 55px;
+    font-weight: 100;
+    margin: block;
+    margin-right: -20px;
+    margin-top: -15px;
+    text-align: left;
+    margin-left: -15px;
   }
 
   h2 {
-    color: #184d47;
-    font-size: 70px;
-    font-weight: 400;
-    margin-left: 35px;
-  }
-
-  h2 i {
-    font-size: 55px;
-    font-weight: 100;
-    margin-right: -10px;
-    margin-top: 50px;
-  }
-
-  p {
-  margin-top: -10%;
-  margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: -35px;
+    margin-bottom: 0px;
+    margin-left: 15px;
   }
 
   button {
@@ -84,10 +88,6 @@ form {
     border: 1px solid seagreen;
   }
   
-  .search-form {
-    margin-bottom: 12px;
-  }
-  
   .form-control {
     border: 1px solid #184d47;
   }
@@ -100,12 +100,15 @@ form {
   .units {
     font-size: 18px; 
     position: relative;
-    top: -37px;
+    top: -30px;
     left: -13px;
   }
 
   .conditions {
     font-size: 10px;
+    margin-right: 20px;
+    margin-top: -30px;
+    text-align: right;
   }
 
   .weekly-report {
