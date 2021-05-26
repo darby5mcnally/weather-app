@@ -54,7 +54,7 @@ function showTemperature(response) {
   temperatureMetric.innerHTML = Math.round(celciusTemperature);
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
-  windElement.innerHTML = Math.round(response.data.wind.speed);
+  windElement.innerHTML = Math.round(response.data.wind.speed /1.609);
   dateElement.innerHTML = formatDate(response.data.dt *1000);
   iconElement.setAttribute(
     "src",
