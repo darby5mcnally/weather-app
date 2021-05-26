@@ -39,11 +39,8 @@ function search(city) {
   axios.get(apiUrl).then(showTemperature);
 }
 
-search("Salt Lake City");
-
 function showTemperature(response) {
   let changingCity = document.querySelector("#changing-city");
-  let temperature = Math.round(response.data.main.temp);
   let temperatureMetric = document.querySelector("#temperature-metric");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
@@ -51,8 +48,10 @@ function showTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
+  celciusTemperature = (response.data.main.temp);
+
   changingCity.innerHTML = response.data.name;
-  temperatureMetric.innerHTML = `${temperature}`;
+  temperatureMetric.innerHTML = Math.round(celciusTemperature);
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
@@ -82,5 +81,33 @@ function getCurrentPosition(event) {
   navigator.geolocation.getCurrentPosition(showWeather);
 }
 
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature-metric");
+
+  celciusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelciusTemperature(event) {
+  event.preventDefault();
+  celciusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature-metric");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
+}
+
+let celciusTemperature = null;
+
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentPosition);
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celciusLink = document.querySelector("#celcius");
+celciusLink.addEventListener("click", displayCelciusTemperature);
+
+search("Salt Lake City");
