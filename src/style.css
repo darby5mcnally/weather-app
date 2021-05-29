@@ -45,15 +45,6 @@ form {
     margin-left: -15px;
   }
 
-  h1 .active {
-    color: #184d47;
-    cursor: default;
-  }
-
-  h1 .active:hover {
-    text-decoration: none;
-  }
-
   h2 {
     font-size: 25px;
     font-weight: 500;
